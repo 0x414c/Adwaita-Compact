@@ -1,0 +1,26 @@
+// fixes 1px tree row misalignment issue in Nautilus 3.16
+// FIXME: it is 3.16 only bug
+// NOTE: ... will look misaligned on selected items
+//NautilusListView>GtkTreeView>row {
+//  padding: 1px 0 0 0;
+//}
+
+
+NautilusFloatingBar {
+  background: $base_color;
+  border: 1px solid $borders_color;
+  padding: 2px;
+
+  &.left {
+    border-width: 1px 1px 0 0;
+    border-radius: 0 3px 0 0;
+  }
+
+  &.right {
+    border-width: 1px 0 0 1px;
+    border-radius: 3px 0 0 0;
+  }
+}
+
+
+// TODO: additional rows in list view must be gray-colored
