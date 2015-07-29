@@ -42,9 +42,9 @@ stage {
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black; }
   .button:insensitive {
-    color: #939695;
+    color: #949796;
     border-color: rgba(0, 0, 0, 0.7);
-    background-color: rgba(66, 71, 73, 0.7);
+    background-color: rgba(66, 72, 73, 0.7);
     box-shadow: none;
     text-shadow: none;
     icon-shadow: none; }
@@ -71,8 +71,8 @@ StEntry {
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
     border-color: rgba(154, 154, 142, 0.5); }
   StEntry:insensitive {
-    color: #939695;
-    border-color: #323636;
+    color: #949796;
+    border-color: #333636;
     box-shadow: none; }
   StEntry StIcon.capslock-warning {
     icon-size: 16px;
@@ -106,7 +106,7 @@ StScrollBar {
 .slider {
   height: 1em;
   -slider-height: 0.3em;
-  -slider-background-color: #323636;
+  -slider-background-color: #333636;
   -slider-border-color: #1c1f1f;
   -slider-active-background-color: #215d9c;
   -slider-active-border-color: #184472;
@@ -119,13 +119,13 @@ StScrollBar {
 .check-box StBin {
   width: 24px;
   height: 22px;
-  background-image: url("resource:///org/gnome/shell/theme/checkbox-off.svg"); }
+  background-image: url("checkbox-off.svg"); }
 .check-box:focus StBin {
-  background-image: url("resource:///org/gnome/shell/theme/checkbox-off-focused.svg"); }
+  background-image: url("checkbox-off-focused.svg"); }
 .check-box:checked StBin {
-  background-image: url("resource:///org/gnome/shell/theme/checkbox.svg"); }
+  background-image: url("checkbox.svg"); }
 .check-box:focus:checked StBin {
-  background-image: url("resource:///org/gnome/shell/theme/checkbox-focused.svg"); }
+  background-image: url("checkbox-focused.svg"); }
 
 /* Switches */
 .toggle-switch {
@@ -134,14 +134,14 @@ StScrollBar {
   background-size: contain; }
 
 .toggle-switch-us {
-  background-image: url("resource:///org/gnome/shell/theme/toggle-off-us.svg"); }
+  background-image: url("toggle-off-us.svg"); }
   .toggle-switch-us:checked {
-    background-image: url("resource:///org/gnome/shell/theme/toggle-on-us.svg"); }
+    background-image: url("toggle-on-us.svg"); }
 
 .toggle-switch-intl {
-  background-image: url("resource:///org/gnome/shell/theme/toggle-off-intl.svg"); }
+  background-image: url("toggle-off-intl.svg"); }
   .toggle-switch-intl:checked {
-    background-image: url("resource:///org/gnome/shell/theme/toggle-on-intl.svg"); }
+    background-image: url("toggle-on-intl.svg"); }
 
 /* links */
 .shell-link {
@@ -664,14 +664,14 @@ StScrollBar {
     background-color: rgba(57, 63, 63, 0.05); }
 
 .calendar-change-month-back {
-  background-image: url("resource:///org/gnome/shell/theme/calendar-arrow-left.svg"); }
+  background-image: url("calendar-arrow-left.svg"); }
   .calendar-change-month-back:rtl {
-    background-image: url("resource:///org/gnome/shell/theme/calendar-arrow-right.svg"); }
+    background-image: url("calendar-arrow-right.svg"); }
 
 .calendar-change-month-forward {
-  background-image: url("resource:///org/gnome/shell/theme/calendar-arrow-right.svg"); }
+  background-image: url("calendar-arrow-right.svg"); }
   .calendar-change-month-forward:rtl {
-    background-image: url("resource:///org/gnome/shell/theme/calendar-arrow-left.svg"); }
+    background-image: url("calendar-arrow-left.svg"); }
 
 .calendar-day-base {
   font-size: 80%;
@@ -702,7 +702,7 @@ StScrollBar {
   border-left-width: 1px; }
 
 .calendar-nonwork-day {
-  color: #939695; }
+  color: #949796; }
 
 .calendar-today {
   font-weight: bold;
@@ -711,7 +711,7 @@ StScrollBar {
 .calendar-day-with-events {
   color: white;
   font-weight: bold;
-  background-image: url("resource:///org/gnome/shell/theme/calendar-today.svg"); }
+  background-image: url("calendar-today.svg"); }
 
 .calendar-other-month-day {
   color: rgba(238, 238, 236, 0.15);
@@ -773,7 +773,7 @@ StScrollBar {
   border: 1px solid rgba(238, 238, 236, 0.4); }
 
 #appMenu {
-  spinner-image: url("resource:///org/gnome/shell/theme/process-working.svg");
+  spinner-image: url("process-working.svg");
   spacing: 4px; }
   #appMenu .label-shadow {
     color: transparent; }
@@ -803,11 +803,11 @@ StScrollBar {
 .ripple-box {
   width: 52px;
   height: 52px;
-  background-image: url("resource:///org/gnome/shell/theme/corner-ripple-ltr.png");
+  background-image: url("corner-ripple-ltr.png");
   background-size: contain; }
 
 .ripple-box:rtl {
-  background-image: url("resource:///org/gnome/shell/theme/corner-ripple-rtl.png"); }
+  background-image: url("corner-ripple-rtl.png"); }
 
 .popup-menu-arrow {
   width: 16px;
@@ -817,7 +817,7 @@ StScrollBar {
   icon-size: 1.09em; }
 
 .window-close {
-  background-image: url("resource:///org/gnome/shell/theme/close-window.svg");
+  background-image: url("close-window.svg");
   background-size: 32px;
   height: 32px;
   width: 32px; }
@@ -967,7 +967,7 @@ StScrollBar {
 .search-provider-icon-more {
   width: 16px;
   height: 16px;
-  background-image: url("resource:///org/gnome/shell/theme/more-results.svg"); }
+  background-image: url("more-results.svg"); }
 
 /* DASHBOARD */
 #dash {
@@ -981,7 +981,7 @@ StScrollBar {
   #dash:rtl {
     border-radius: 9px 0 0 9px; }
   #dash .placeholder {
-    background-image: url("resource:///org/gnome/shell/theme/dash-placeholder.svg");
+    background-image: url("dash-placeholder.svg");
     background-size: contain;
     height: 24px; }
   #dash .empty-dash-drop-target {
@@ -1105,13 +1105,13 @@ StScrollBar {
   .page-indicator .page-indicator-icon {
     width: 18px;
     height: 18px;
-    background-image: url(resource:///org/gnome/shell/theme/page-indicator-inactive.svg); }
+    background-image: url(page-indicator-inactive.svg); }
   .page-indicator:hover .page-indicator-icon {
-    background-image: url(resource:///org/gnome/shell/theme/page-indicator-hover.svg); }
+    background-image: url(page-indicator-hover.svg); }
   .page-indicator:active .page-indicator-icon {
-    background-image: url(resource:///org/gnome/shell/theme/page-indicator-active.svg); }
+    background-image: url(page-indicator-active.svg); }
   .page-indicator:checked .page-indicator-icon, .page-indicator:checked:active {
-    background-image: url(resource:///org/gnome/shell/theme/page-indicator-checked.svg); }
+    background-image: url(page-indicator-checked.svg); }
 
 .app-well-app > .overview-icon.overview-icon-with-label,
 .grid-search-result .overview-icon.overview-icon-with-label {
@@ -1447,9 +1447,9 @@ StScrollBar {
         text-shadow: none;
         icon-shadow: none; }
       .login-dialog .modal-dialog-button:default:insensitive {
-        color: #939695;
+        color: #949796;
         border-color: rgba(0, 0, 0, 0.7);
-        background-color: rgba(66, 71, 73, 0.7);
+        background-color: rgba(66, 72, 73, 0.7);
         box-shadow: none;
         text-shadow: none;
         icon-shadow: none; }
@@ -1605,7 +1605,7 @@ StScrollBar {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); }
 
 #lockDialogGroup {
-  background: #2e3436 url(resource:///org/gnome/shell/theme/noise-texture.png);
+  background: #2e3436 url(noise-texture.png);
   background-repeat: repeat; }
 
 #screenShieldNotifications StButton#vhandle, #screenShieldNotifications StButton#hhandle {
