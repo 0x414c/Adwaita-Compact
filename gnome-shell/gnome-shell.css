@@ -20,7 +20,7 @@
 /* GLOBALS */
 stage {
   font-family: Cantarell, Sans-Serif;
-  font-size: 11pt;
+  font-size: 10pt;
   color: #eeeeec; }
 
 /* WIDGETS */
@@ -163,7 +163,7 @@ StScrollBar {
   border-radius: 5px;
   color: #eeeeec;
   background-color: rgba(23, 25, 26, 0.95);
-  border: 3px solid rgba(238, 238, 236, 0.5);
+  border: 2px solid rgba(238, 238, 236, 0.5);
   padding: 24px; }
   .modal-dialog .run-dialog-entry {
     width: 20em;
@@ -174,7 +174,7 @@ StScrollBar {
   .modal-dialog .run-dialog-button-box {
     padding-top: 1em; }
   .modal-dialog .run-dialog-label {
-    font-size: 12pt;
+    font-size: 11pt;
     font-weight: bold;
     color: #d6d6d1;
     padding-bottom: .4em; }
@@ -186,12 +186,12 @@ StScrollBar {
 .show-processes-dialog-subject,
 .mount-question-dialog-subject,
 .end-session-dialog-subject {
-  font-size: 14pt; }
+  font-size: 13pt; }
 
 /* End Session Dialog */
 .end-session-dialog {
   spacing: 42px;
-  border: 3px solid rgba(238, 238, 236, 0.2); }
+  border: 2px solid rgba(238, 238, 236, 0.2); }
 
 .end-session-dialog-list {
   padding-top: 20px; }
@@ -313,7 +313,7 @@ StScrollBar {
 /* Password or Authentication Dialog */
 .prompt-dialog {
   width: 500px;
-  border: 3px solid rgba(238, 238, 236, 0.2); }
+  border: 2px solid rgba(238, 238, 236, 0.2); }
 
 .prompt-dialog-main-layout {
   spacing: 24px;
@@ -382,16 +382,16 @@ StScrollBar {
     background-color: #343a3a;
     box-shadow: inset 0 -1px 0px #282c2c; }
   .popup-menu .popup-menu-content {
-    padding: 1em 0em; }
+    padding: .75em 0; }
   .popup-menu .popup-menu-item {
     spacing: 12px; }
     .popup-menu .popup-menu-item:ltr {
-      padding: .4em 1.75em .4em 0em; }
+      padding: .25em 1.75em .25em 0; }
     .popup-menu .popup-menu-item:rtl {
-      padding: .4em 0em .4em 1.75em; }
+      padding: .25em 0 .25em 1.75em; }
     .popup-menu .popup-menu-item:checked {
       background-color: #343a3a;
-      box-shadow: inset 0 1px 0px #282c2c;
+      box-shadow: inset 0 1px 0 #282c2c;
       font-weight: bold; }
     .popup-menu .popup-menu-item.selected {
       background-color: rgba(238, 238, 236, 0.1);
@@ -425,7 +425,7 @@ StScrollBar {
 
 .popup-separator-menu-item {
   height: 1px;
-  margin: 6px 64px;
+  margin: 0;
   background-color: transparent;
   border-color: #343a3a;
   border-bottom-width: 1px;
@@ -787,13 +787,13 @@ StScrollBar {
   color: #eeeeec;
   border-radius: 32px;
   /* wish we could do 50% */
-  padding: 13px;
+  padding: 11px;
   border: 1px solid #282c2c; }
   .system-menu-action:hover, .system-menu-action:focus {
     background-color: rgba(238, 238, 236, 0.1);
     color: #eeeeec;
     border: none;
-    padding: 14px; }
+    padding: 12px; }
   .system-menu-action:active {
     background-color: #215d9c;
     color: #ffffff; }
@@ -898,15 +898,15 @@ StScrollBar {
 
 .window-clone-border {
   border: 4px solid #215d9c;
-  border-radius: 4px;
+  border-radius: 5px;
   box-shadow: inset 0px 0px 0px 1px #215d9c; }
 
 .window-caption {
   spacing: 25px;
   color: #eeeeec;
   background-color: rgba(46, 52, 54, 0.7);
-  border-radius: 8px;
-  padding: 4px 12px;
+  border-radius: 5px;
+  padding: 3px 12px 4px 12px;
   -shell-caption-spacing: 12px; }
   .window-caption:hover {
     background-color: #215d9c;
@@ -914,10 +914,10 @@ StScrollBar {
 
 .search-entry {
   width: 320px;
-  padding: 7px 9px;
+  padding: 5px 8px;
   border-radius: 6px; }
   .search-entry:focus {
-    padding: 6px 8px;
+    padding: 4px 7px;
     border-width: 2px; }
   .search-entry .search-entry-icon {
     icon-size: 1em;
@@ -974,11 +974,13 @@ StScrollBar {
   font-size: 9pt;
   color: #eeeeec;
   background-color: #2e3436;
-  padding: 4px 0;
-  border: 1px solid rgba(128, 128, 128, 0.4);
-  border-left: 0px;
-  border-radius: 0px 9px 9px 0px; }
+  padding: 0;
+  border: 1px solid rgba(128, 128, 128, 0.4); }
+  #dash:ltr {
+    border-left: 0;
+    border-radius: 0 6px 6px 0; }
   #dash:rtl {
+    border-right: 0;
     border-radius: 9px 0 0 9px; }
   #dash .placeholder {
     background-image: url("dash-placeholder.svg");
@@ -989,11 +991,11 @@ StScrollBar {
     height: 24px; }
 
 .dash-item-container > StWidget {
-  padding: 4px 8px; }
+  padding: 4px; }
 
 .dash-label {
-  border-radius: 7px;
-  padding: 4px 12px;
+  border-radius: 4px;
+  padding: 3px 12px 4px 12px;
   color: #eeeeec;
   background-color: rgba(46, 52, 54, 0.7);
   text-align: center;
@@ -1121,14 +1123,19 @@ StScrollBar {
 .workspace-thumbnails {
   visible-width: 32px;
   spacing: 11px;
-  padding: 8px;
-  border-radius: 9px 0 0 9px; }
+  padding: 8px; }
+  .workspace-thumbnails:ltr {
+    border-radius: 6px 0 0 6px; }
   .workspace-thumbnails:rtl {
-    border-radius: 0 9px 9px 0; }
+    border-radius: 0 6px 6px 0; }
 
 .workspace-thumbnail-indicator {
   border: 4px solid #215d9c;
   padding: 1px; }
+  .workspace-thumbnail-indicator:ltr {
+    border-radius: 2px 0 0 2px; }
+  .workspace-thumbnail-indicator:rtl {
+    border-radius: 0 2px 2px 0; }
 
 .search-display > StBoxLayout,
 .all-apps,
@@ -1150,7 +1157,7 @@ StScrollBar {
   link-color: #2a76c6; }
 
 .notification-banner {
-  font-size: 11pt;
+  font-size: 9pt;
   width: 34em;
   margin: 5px;
   border-radius: 6px;
@@ -1273,7 +1280,7 @@ StScrollBar {
 /* Eeeky things */
 .legacy-tray {
   background-color: #393f3f;
-  border: 1px solid #1c1f1f;
+  border: 1px solid rgba(238, 238, 236, 0.2);
   border-bottom-width: 0; }
   .legacy-tray:ltr {
     border-radius: 0 6px 0 0;
@@ -1285,9 +1292,12 @@ StScrollBar {
 .legacy-tray-handle,
 .legacy-tray-icon {
   padding: 6px; }
+  .legacy-tray-handle:last-child,
+  .legacy-tray-icon:last-child {
+    border-radius: 0 6px 0 0; }
   .legacy-tray-handle StIcon,
   .legacy-tray-icon StIcon {
-    icon-size: 24px; }
+    icon-size: 16px; }
   .legacy-tray-handle:hover, .legacy-tray-handle:focus,
   .legacy-tray-icon:hover,
   .legacy-tray-icon:focus {
@@ -1296,12 +1306,14 @@ StScrollBar {
 .legacy-tray-icon-box {
   spacing: 12px; }
   .legacy-tray-icon-box:ltr {
-    padding-left: 12px; }
+    padding-left: 12px;
+    border-radius: 0 6px 0 0; }
   .legacy-tray-icon-box:rtl {
-    padding-right: 12px; }
+    padding-right: 12px;
+    border-radius: 6px 0 0 0; }
   .legacy-tray-icon-box StButton {
-    width: 24px;
-    height: 24px; }
+    width: 16px;
+    height: 16px; }
 
 .magnifier-zoom-region {
   border: 2px solid #215d9c; }
