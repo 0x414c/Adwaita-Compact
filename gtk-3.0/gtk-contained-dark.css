@@ -1008,7 +1008,7 @@ GtkTextView {
         icon-shadow: none; }
   .button.image-button, .header-bar .titlebutton.button,
   .titlebar .titlebutton.button {
-    padding: 5px; }
+    padding: 6px; }
   .button.text-button, .header-bar .text-button.button.titlebutton,
   .titlebar .text-button.button.titlebutton {
     padding-left: 12px;
@@ -1022,6 +1022,11 @@ GtkTextView {
     .button.text-button.image-button .label:last-child, .header-bar .text-button.titlebutton.button .label:last-child,
     .titlebar .text-button.titlebutton.button .label:last-child {
       padding-right: 6px; }
+  .button .titlebar, .header-bar .button.titlebutton .titlebar,
+  .titlebar .button.titlebutton .titlebar, .header-bar > .button.text-button,
+  .titlebar .header-bar > .text-button.button.titlebutton {
+    padding-top: 4px;
+    padding-bottom: 5px; }
   .stack-switcher > .button, .header-bar .stack-switcher > .button.titlebutton,
   .titlebar .stack-switcher > .button.titlebutton {
     outline-offset: -3px; }
@@ -1032,8 +1037,8 @@ GtkTextView {
     .titlebar .stack-switcher > .button.titlebutton > GtkImage {
       padding-left: 4px;
       padding-right: 4px;
-      padding-top: 1px;
-      padding-bottom: 1px; }
+      padding-top: 0px;
+      padding-bottom: 0px; }
     .stack-switcher > .button.text-button, .header-bar .stack-switcher > .text-button.button.titlebutton,
     .titlebar .stack-switcher > .text-button.button.titlebutton {
       padding: 3px 8px 4px 8px; }
@@ -3828,7 +3833,7 @@ GtkCalendar {
     border-bottom-left-radius: 9px;
     border-bottom-right-radius: 9px; }
   .message-dialog.csd .dialog-action-area .button {
-    padding: 8px;
+    padding: 7px 8px 8px 8px;
     border-radius: 0;
     color: #eeeeec;
     outline-color: rgba(238, 238, 236, 0.3);

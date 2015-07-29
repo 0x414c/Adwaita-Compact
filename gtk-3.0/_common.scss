@@ -612,7 +612,7 @@ $_dot_color: if($variant=='light', $selected_bg_color,
     }
   }
 
-  &.image-button { padding: 5px; }
+  &.image-button { padding: 6px; }
 
   &.text-button {
     padding-left: 12px;
@@ -629,6 +629,11 @@ $_dot_color: if($variant=='light', $selected_bg_color,
     .label:last-child { padding-right: 6px; }
   }
 
+  .titlebar, .header-bar > &.text-button {
+    padding-top: 4px;
+    padding-bottom: 5px;
+  }
+
   .stack-switcher > & {
     // to position the needs attention dot, padding is added to the button
     // child, a label needs just lateral padding while an icon needs vertical
@@ -643,8 +648,8 @@ $_dot_color: if($variant=='light', $selected_bg_color,
     > GtkImage {
       padding-left: 4px;   // image padding
       padding-right: 4px;  //
-      padding-top: 1px;    //
-      padding-bottom: 1px; //
+      padding-top: 0px;    //
+      padding-bottom: 0px; //
     }
     &.text-button {
       padding: 3px 8px 4px 8px; // needed or it will get overridden
@@ -2822,7 +2827,7 @@ GtkCalendar {
       border-bottom-right-radius: 9px;
     }
     .dialog-action-area .button {
-      padding: 8px;
+      padding: 7px 8px 8px 8px;
       border-radius: 0;
       @include button(normal, $edge:none);
       @extend %middle_button;
