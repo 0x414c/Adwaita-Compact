@@ -1031,17 +1031,15 @@ GtkTextView {
   .titlebar .stack-switcher > .button.titlebutton {
     outline-offset: -3px; }
     .stack-switcher > .button > .label {
-      padding-left: 4px;
-      padding-right: 4px; }
+      padding-left: 6px;
+      padding-right: 6px; }
     .stack-switcher > .button > GtkImage, .header-bar .stack-switcher > .button.titlebutton > GtkImage,
     .titlebar .stack-switcher > .button.titlebutton > GtkImage {
       padding-left: 4px;
-      padding-right: 4px;
-      padding-top: 0px;
-      padding-bottom: 0px; }
+      padding-right: 4px; }
     .stack-switcher > .button.text-button, .header-bar .stack-switcher > .text-button.button.titlebutton,
     .titlebar .stack-switcher > .text-button.button.titlebutton {
-      padding: 3px 8px 4px 8px; }
+      padding: 3px 6px 4px 6px; }
     .stack-switcher > .button.image-button, .header-bar .stack-switcher > .titlebutton.button,
     .titlebar .stack-switcher > .titlebutton.button {
       padding: 5px 2px; }

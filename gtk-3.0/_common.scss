@@ -642,17 +642,15 @@ $_dot_color: if($variant=='light', $selected_bg_color,
     outline-offset: -3px; // needs to be set or it gets overriden by GtkRadioButton outline-offset
 
     > .label {
-      padding-left: 4px;  // label padding
-      padding-right: 4px; //
+      padding-left: 6px;  // label padding
+      padding-right: 6px; //
     }
     > GtkImage {
       padding-left: 4px;   // image padding
       padding-right: 4px;  //
-      padding-top: 0px;    //
-      padding-bottom: 0px; //
     }
     &.text-button {
-      padding: 3px 8px 4px 8px; // needed or it will get overridden
+      padding: 3px 6px 4px 6px; // needed or it will get overridden
     }
     &.image-button {
       // we want image buttons to have a 1:1 aspect ratio, so compensation
@@ -695,7 +693,7 @@ $_dot_color: if($variant=='light', $selected_bg_color,
 %needs_attention {
   animation: needs_attention 150ms ease-in;
   $_dot_shadow: _text_shadow_color();
-  $_dot_shadow_r: if($variant=='light',0.5,0.45);
+  $_dot_shadow_r: 0.5;
   background-image: -gtk-gradient(radial,
                                   center center, 0,
                                   center center, 0.5,
