@@ -1027,6 +1027,11 @@ GtkTextView {
   .titlebar .header-bar > .text-button.button.titlebutton {
     padding-top: 4px;
     padding-bottom: 5px; }
+  .entry + .button, .header-bar .entry + .button.titlebutton,
+  .titlebar .entry + .button.titlebutton, .button + .entry, .header-bar .button.titlebutton + .entry,
+  .titlebar .button.titlebutton + .entry {
+    padding-top: 0;
+    padding-bottom: 0; }
   .stack-switcher > .button, .header-bar .stack-switcher > .button.titlebutton,
   .titlebar .stack-switcher > .button.titlebutton {
     outline-offset: -3px; }
