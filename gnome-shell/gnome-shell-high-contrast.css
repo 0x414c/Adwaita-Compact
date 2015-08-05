@@ -1280,7 +1280,7 @@ StScrollBar {
 /* Eeeky things */
 .legacy-tray {
   background-color: #000;
-  border: 1px solid rgba(238, 238, 236, 0.2);
+  border: 1px solid rgba(128, 128, 128, 0.4);
   border-bottom-width: 0; }
   .legacy-tray:ltr {
     border-radius: 0 6px 0 0;
